@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">SuperDuperWeather</string>
+    <string name="textInFirstView">Погода</string>
+    <string name="striggod">StrigGod</string>
+    <string name="TextHeaderButton">Погода в Москве</string>
+    <string name="moscowimage">MOscowImage</string>
+    <string name="WhetherInMoscowTezt">Погода в москве всегда солнечная!</string>
+</resources>
