@@ -1,0 +1,4 @@
+#Thu Jan 31 17:19:31 MSK 2019
+base.0=E\:\\ANDROID\\SuperDuperWeather\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\9
+path.0=classes.dex
+renamed.0=classes.dex
