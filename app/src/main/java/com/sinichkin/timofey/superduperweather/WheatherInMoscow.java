@@ -8,7 +8,7 @@ import android.util.Log;
 import android.widget.TextView;
 
 public class WheatherInMoscow  extends AppCompatActivity {
-
+    private static final String CITY_NAME = "CITY_NAME";
 
 
     private static final String tag = MainActivity.class.getSimpleName();
@@ -18,8 +18,8 @@ public class WheatherInMoscow  extends AppCompatActivity {
         Log.d(tag,"Начинаем менять сет контент");
         setContentView(R.layout.wheatherinmoscow);
         Intent intent = getIntent();
-        String cytiName = intent.getStringExtra("CITY_NAME");
+        String cityName = intent.getStringExtra(CITY_NAME);
         TextView textView = findViewById(R.id.textViewWeathet);
-        textView.setText("В " +  cytiName+ " "+textView.getText());
+        textView.setText(cityName);
     }
 }

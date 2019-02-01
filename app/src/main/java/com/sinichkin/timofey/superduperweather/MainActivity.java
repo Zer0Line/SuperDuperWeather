@@ -7,12 +7,13 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 
 public class MainActivity extends AppCompatActivity {
 
     private static final String tag = MainActivity.class.getSimpleName();
-
+private static final String CITY_NAME = "CITY_NAME";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,18 +27,16 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public void onClick(View view) {
             Log.d(tag,"Переходим к запусу нового");
-            startAnotherActiv();
+            startAnotherActive();
         }
     };
 
-    public void startAnotherActiv(){
-
-
+    public void startAnotherActive(){
 
         Intent intent = new Intent(this,WheatherInMoscow.class);
-        String cytiName = "Москве";
-        intent.putExtra("CITY_NAME", cytiName);
-
+        TextView cityTextView = findViewById(R.id.city_text_input);
+        String cityName = cityTextView.getText().toString();
+        intent.putExtra(CITY_NAME, cityName);
         startActivity(intent);
     }
 

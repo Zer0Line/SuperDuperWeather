@@ -8,4 +8,14 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+
+    <style name="LightTheme" parent="TextAppearance.AppCompat">
+        <!-- Customize your theme here. -->
+        <item name="android:fontFamily">@font/evangeliett</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/SizeHeader</item>
+    </style>
+
+
 </resources>

@@ -7,29 +7,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center_horizontal"
-    android:orientation="vertical">
+    android:orientation="vertical" >
 
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        app:srcCompat="@drawable/moscow" />
 
     <TextView
+        style="@style/LightTheme"
         android:id="@+id/textViewWeathet"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/evangeliett"
-        android:text="@string/WhetherInMoscowTezt"
-        android:textAlignment="center"
-        android:textSize="@dimen/SizeHeader"
-        android:textStyle="bold" />
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:contentDescription="Pictur"
-        android:scaleType="centerCrop"
-        android:verticalScrollbarPosition="defaultPosition"
-        app:srcCompat="@drawable/s1200png" />
-
-
+        android:gravity="center"
+         />
 </LinearLayout>
 

@@ -2,7 +2,8 @@
     <string name="app_name">SuperDuperWeather</string>
     <string name="textInFirstView">Погода</string>
     <string name="striggod">StrigGod</string>
-    <string name="TextHeaderButton">Погода в Москве</string>
+    <string name="TextHeaderButton">Найти</string>
     <string name="moscowimage">MOscowImage</string>
     <string name="WhetherInMoscowTezt">погода всегда солнечная!</string>
+    <string name="hintFindCity">Введите имя города</string>
 </resources>

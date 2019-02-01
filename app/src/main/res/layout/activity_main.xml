@@ -9,31 +9,29 @@
     android:orientation="vertical">
 
     <TextView
+        style="@style/LightTheme"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
-        android:fontFamily="@font/evangeliett"
         android:text="@string/textInFirstView"
-        android:textSize="@dimen/SizeHeader"
-        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:id="@+id/city_text_input"
+        style="@style/LightTheme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:editable="true"
+        android:hint="@string/hintFindCity"
+        android:inputType="text" />
+
     <Button
         android:id="@+id/buttonMoscow"
-        style="@style/Widget.AppCompat.Button"
+        style="@style/LightTheme"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/evangeliett"
         android:text="@string/TextHeaderButton" />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:contentDescription="@string/striggod"
-        app:srcCompat="@drawable/stribog1png" />
 
 </LinearLayout>
