@@ -6,4 +6,8 @@
     <string name="moscowimage">MOscowImage</string>
     <string name="WhetherInMoscowTezt">погода всегда солнечная!</string>
     <string name="hintFindCity">Введите имя города</string>
+    <string name="temp">Температура</string>
+    <string name="presur">Давление</string>
+    <string name="rainfals">Осадки</string>
+    <string name="magnitField">Магнитное поле</string>
 </resources>
