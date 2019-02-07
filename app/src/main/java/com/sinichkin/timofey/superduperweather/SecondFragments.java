@@ -9,7 +9,10 @@ import android.view.ViewGroup;
 public class SecondFragments extends Fragment {
     public static SecondFragments init(Bundle savedInstanceState) {
         SecondFragments f = new SecondFragments();
-        f.setArguments(savedInstanceState);
+        if (savedInstanceState != null) {
+            f.setArguments(savedInstanceState);
+        }
+
         f.setRetainInstance(true);
         return f;
     }
@@ -22,8 +25,5 @@ public class SecondFragments extends Fragment {
         View view = inflater.inflate(R.layout.second_fragment, container, false);
         return view;
     }
-    @Override
-    public void onActivityCreated(Bundle savedInstanceState) {
-        super.onActivityCreated(savedInstanceState);
-    }
+
 }

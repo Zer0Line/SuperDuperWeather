@@ -12,7 +12,9 @@ public class MainFrafments extends Fragment {
     public static MainFrafments init(Bundle savedInstanceState) {
 
         MainFrafments f = new MainFrafments();
-        f.setArguments(savedInstanceState);
+        if(savedInstanceState != null){
+            f.setArguments(savedInstanceState);
+        }
         f.setRetainInstance(true);
         return f;
     }
@@ -24,11 +26,5 @@ public class MainFrafments extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.main_fragments, container, false);
         return view;
-    }
-
-
-    @Override
-    public void onActivityCreated(Bundle savedInstanceState) {
-        super.onActivityCreated(savedInstanceState);
     }
 }
